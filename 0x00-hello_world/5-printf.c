@@ -1,6 +1,10 @@
 #include <stdio.h>
 /**
- * Main Function
+ * main - Entry point of the program
+ *
+ * Description: Prints "Message Described" to the standard output.
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {

@@ -1,6 +1,10 @@
 #include <stdio.h>
 /**
- * Function Main
+ * main - Entry point of the program
+ *
+ * Description: Prints "Size of character inputs" to the standard output.
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
