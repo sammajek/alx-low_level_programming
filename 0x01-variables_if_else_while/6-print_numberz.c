@@ -6,19 +6,14 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+int main(void) 
 {
-	char letter;
+	int i;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
+	for (i = 0; i < 10; i++)
 	{
-		if (letter != 'q' && letter != 'e')
-		{
-			putchar(letter);
-		}
+		putchar(i + '0');  /* Convert digit to ASCII code and print */
+		putchar('\n');     /* Print newline character */
 	}
-	putchar('\n');
-
 	return (0);
 }
-
