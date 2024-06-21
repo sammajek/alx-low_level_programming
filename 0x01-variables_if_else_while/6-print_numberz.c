@@ -8,9 +8,14 @@
  */
 int main(void)
 {
-	for (int digit = 0; digit < 10; digit++)
+	char letter;
+
+	for (letter = 'a'; letter <= 'z'; letter++)
 	{
-		putchar('0' + digit);
+		if (letter != 'q' && letter != 'e')
+		{
+			putchar(letter);
+		}
 	}
 	putchar('\n');
 
