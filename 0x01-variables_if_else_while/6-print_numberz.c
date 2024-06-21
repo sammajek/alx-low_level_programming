@@ -6,7 +6,7 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void) 
+int main(void)
 {
 	int i;
 
@@ -15,6 +15,6 @@ int main(void)
 		putchar(i + '0');  /* Convert digit to ASCII code and print */
 	}
 	putchar('\n');     /* Print newline character at end */
-	
+
 	return (0);
 }
