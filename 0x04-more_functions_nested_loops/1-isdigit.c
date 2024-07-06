@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 /**
  * main - Entry point
@@ -9,11 +8,42 @@
  */
 int main(void)
 {
-	char c1 = '5';
-	char c2 = 'a';
+	int result;
 
-	printf("%c is a digit: %d\n", c1, _isdigit(c1)); /* Print: 5 is a digit: 1 */
-	printf("%c is a digit: %d\n", c2, _isdigit(c2)); /* Print: a is a digit: 0 */
+	result = _isdigit('5');
+	if (result == 1)
+	{
+		_putchar('5');
+		_putchar(':');
+		_putchar(' ');
+		_putchar('1');
+		_putchar('\n');
+	}
+	else
+	{
+		_putchar('5');
+		_putchar(':');
+		_putchar(' ');
+		_putchar('0');
+		_putchar('\n');
+	}
+
+	result = _isdigit('a');
+	if (result == 1)
+	{
+		_putchar('a');
+		_putchar(':');
+		_putchar(' ');
+		_putchar('1');
+		_putchar('\n');
+	}
+	else
+	{
+		_putchar('a');
+		_putchar(':');
+		_putchar('0');
+		_putchar('\n');
+	}
 
 	return (0);
 }
