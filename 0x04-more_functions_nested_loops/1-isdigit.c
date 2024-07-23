@@ -1,48 +1,19 @@
 #include "main.h"
 
 /**
- * main - tests the _isdigit function
- * Return: 0
+ * _isdigit - checks for a digit (0 through 9)
+ * @c: the character to check
+ *
+ * Return: 1 if c is a digit, 0 otherwise
  */
-int main(void)
+int _isdigit(int c)
 {
-	int result;
-
-	result = _isdigit('5');
-	if (result == 1)
+	if (c >= '0' && c <= '9')
 	{
-		_putchar('5');
-		_putchar(':');
-		_putchar(' ');
-		_putchar('1');
-		_putchar('\n');
+		return (1);
 	}
 	else
 	{
-		_putchar('5');
-		_putchar(':');
-		_putchar(' ');
-		_putchar('0');
-		_putchar('\n');
+		return (0);
 	}
-
-	result = _isdigit('a');
-	if (result == 1)
-	{
-		_putchar('a');
-		_putchar(':');
-		_putchar(' ');
-		_putchar('1');
-		_putchar('\n');
-	}
-	else
-	{
-		_putchar('a');
-		_putchar(':');
-		_putchar(' ');
-		_putchar('0');
-		_putchar('\n');
-	}
-
-	return (0);
 }
