@@ -1,4 +1,5 @@
 #include "3-calc.h"
+#include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
 
