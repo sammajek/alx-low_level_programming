@@ -49,7 +49,8 @@ int op_div(int a, int b)
 {
 	if (b == 0)
 	{
-		write(2, "Error\n100\n", 12);
+		write(2, "Error\n", 6);
+		write(2, "100\n", 4);
 		exit(100);
 	}
 	return (a / b);
@@ -66,7 +67,8 @@ int op_mod(int a, int b)
 {
 	if (b == 0)
 	{
-		write(2, "Error\n100\n", 12);
+		write(2, "Error\n", 6);
+		write(2, "100\n", 4);
 		exit(100);
 	}
 	return (a % b);
