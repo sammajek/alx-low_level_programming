@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 4)
 	{
-	write(2, "Error\n", 6);
+	write(2, "Error\n98\n", 12);
 		exit(98);
 	}
 
@@ -25,10 +25,15 @@ int main(int argc, char *argv[])
 	num2 = atoi(argv[3]);
 
 	op_func = get_op_func(argv[2]);
-	if (!op_func)
+	if (op_func == NULL || argv[2][1] != '\0')
 	{
-		write(2, "Error\n", 6);
+		write(2, "Error\n99\n", 12);
 		exit(99);
+	}
+	if ((*argv[2] == '/' || *argv[2] == '%') && num2 == 0)
+	{
+		write(2, "Error\n100\n", 12);
+		exit(100);
 	}
 
 	result = op_func(num1, num2);
