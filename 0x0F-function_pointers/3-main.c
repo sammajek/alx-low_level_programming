@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	if (argc != 4)
 	{
 	write(2, "Error\n98\n", 12);
-		exit(98);
+		exit(1);
 	}
 
 	num1 = atoi(argv[1]);
