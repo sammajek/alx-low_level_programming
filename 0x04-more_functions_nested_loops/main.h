@@ -9,8 +9,6 @@ void print_numbers(void);
 void print_most_numbers(void);
 void more_numbers(void);
 int _putchar(char c);
-void print_number(long n);
-long largest_prime_factor(long n);
-int _putchar(char c);
+void print_number(int n);
 
 #endif /* MAIN_H */
