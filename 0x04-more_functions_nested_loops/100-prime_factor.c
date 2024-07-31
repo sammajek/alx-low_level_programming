@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * find_largest_prime_factor - Finds and prints the largest prime factor of a number
+ * find_largest_prime_factor - Finds the largest prime factor of a number
  * @n: The number to find the largest prime factor of
  */
 void find_largest_prime_factor(long n)
@@ -22,7 +22,7 @@ void find_largest_prime_factor(long n)
 			factor++;
 		}
 	}
-    
+
 	printf("%ld\n", largest);
 }
 
@@ -33,5 +33,5 @@ void find_largest_prime_factor(long n)
 int main(void)
 {
 	find_largest_prime_factor(612852475143);
-	return 0;
+	return (0);
 }
