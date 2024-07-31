@@ -7,23 +7,23 @@
  */
 void find_largest_prime_factor(long n)
 {
-    long factor = 2;
-    long largest = 0;
+	long factor = 2;
+	long largest = 0;
 
-    while (n > 1)
-    {
-        if (n % factor == 0)
-        {
-            largest = factor;
-            n /= factor;
-        }
-        else
-        {
-            factor++;
-        }
-    }
+	while (n > 1)
+	{
+		if (n % factor == 0)
+		{
+			largest = factor;
+			n /= factor;
+		}
+		else
+		{
+			factor++;
+		}
+	}
     
-    printf("%ld\n", largest);
+	printf("%ld\n", largest);
 }
 
 /**
@@ -32,6 +32,6 @@ void find_largest_prime_factor(long n)
  */
 int main(void)
 {
-    find_largest_prime_factor(612852475143);
-    return 0;
+	find_largest_prime_factor(612852475143);
+	return 0;
 }
